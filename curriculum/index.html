@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Izaltino Romão Neto</h1>
+        <p>Desenvolvedor Java Back-end | Spring Boot | GIT | Database | MySql | Cassandra | Docker | Kubernetes</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2 id="projetos">Projetos</h2>
+        <div class="projects-container">
+            <div class="projeto">
+                <h3>Finance Controller</h3>
+                <p>Um app desenvolvido em Angular com back-end em spring boot, com a finalidade de ajudar pessoas inexperientes em controlar suas finanças.</p>
+                <div class="links">
+                    <a class="project-link" href="https://github.com/izaltinoromao/projeto-c317-front/tree/main">Github Repository front-end
+                    </a>
+                    <a class="project-link" href="https://github.com/izaltinoromao/projeto-c317-back">Github Repository back-end
+                    </a>
+                </div>
+                <img class="project-image" src="assets/finance_controller.png" onclick="openModal(this)">
+            </div>
+            <div class="projeto">
+                <h3>Printer Management</h3>
+                <p>Este projeto foi desenvolvido em java com o net beans, a finalidade é controlar o aluguel de impressoas.</p>
+                <img class="project-image" src="assets/printer-management.png" onclick="openModal(this)">
+            </div>
+            <div class="projeto">
+                <h3>Drag Race</h3>
+                <p>Esse projeto foi desenvolvido em spring-boot, a finalidade é controlar e registrar tempos e velocidade maxima de carros em um drag race.</p>
+                <div class="links"></div>
+                    <a class="project-link" href="https://github.com/izaltinoromao/drag-race">Github Repository </a>
+                <div class="links"></div>
+                <img class="project-image" src="assets/drag-race.jpg" onclick="openModal(this)">
+            </div>
+        </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Estrutura de código e arquitetura</li>
+            <li>Performance de aplicações web</li>
+            <li>Desenvolvimento back-end e DevOps</li>
+            <li>Desenvolvimento agil de software</li>
+            <li>Desenvolvimento guiado a testes</li>
+        </ul>
+    </section>
+    
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        <form class="form-contato">
+            <label for="nome">Nome:</label>
+            <input type="text" class="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" class="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="mensagem" name="mensagem" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="imgModal">
+        <div id="caption"></div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
